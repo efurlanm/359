@@ -101,7 +101,7 @@ Exemplo de um registro, 11400 :
 
 Como o OpenStreetMap não é o foco principal desse estudo não entraremos em detalhes. Ele vai apenas ajudar na visualização dos dados, compondo um mapa de fundo de vias para auxiliar na localização das regiões, visualização da quantidade de acidentes em vias, e ajudar em informações visuais que podem ser obtidas sobrepondo os pontos dos acidentes a um mapa de fundo de vias. Maiores informações sobre o OpenStreetMap podem ser obtidas no *site* [OpenStreetMap](https://www.openstreetmap.org/) .
 
-Uma compilação do banco de dados de vias públicas extraído do OpenStreeMap  (Imposm GoJSON, 116 MB) pode ser obtido em:
+Uma compilação do banco de dados de vias públicas extraído do OpenStreeMap  (Imposm GoJSON, 116 MB) pode ser obtido em :
 
 - http://www.nextzen.org/metro-extracts/index.html , ou
 - http://s3.amazonaws.com/metro-extracts.nextzen.org/sao-paulo_brazil.imposm-geojson.zip

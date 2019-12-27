@@ -134,7 +134,7 @@ O rearranjo da coluna `NOME` e `geometry` é opcional e pode eventualmente ajuda
 
 ## Seleção e transformação dos dados
 
-Foi selecionada uma área em torno da região metropolitana de São Paulo com o objetivo de, em uma primeira etapa, reduzir o tamanho do banco de dados para aumentar a rapidez de acesso, processamento, e obtenção de resultados. Nesta etapa, dados que são são necessários serão eliminados para poder focarmos nas informações relevantes. Em estudos futuros pode-se aumentar a área, selecionar outras, ou então uma combinação de ambos, em função dos resultados que se pretende obter, utilizando a primeira etapa como referência. O *dataset* resultante é salvo em um arquivo do tipo CSV com o nome "BaseRedu.csv". Ele estabelece a seleção de parâmetros de dados que serão necessários, requisitados, e utilizados nos próximos passos. Para fazer a seleção e transformação utilizamos Python e bibliotecas. O código está disponível também no arquivo ".ipynb" (Jupyter Notebook)
+Foi selecionada uma área em torno da região metropolitana de São Paulo com o objetivo de, em uma primeira etapa, reduzir o tamanho do banco de dados para aumentar a rapidez de acesso, processamento, e obtenção de resultados. Nesta etapa, dados que são são necessários serão eliminados para poder focarmos nas informações relevantes. Em estudos futuros pode-se aumentar a área, selecionar outras, ou então uma combinação de ambos, em função dos resultados que se pretende obter, utilizando a primeira etapa como referência. O *dataset* resultante é salvo em um arquivo do tipo CSV com o nome "BaseRedu.csv". Ele estabelece a seleção de parâmetros de dados que serão necessários, requisitados, e utilizados nos próximos passos. Para fazer a seleção e transformação utilizamos Python e bibliotecas. O código está disponível também no arquivo ".ipynb" (Jupyter Notebook) :
 
 - https://github.com/efurlanm/359/blob/master/proj-geop-sp-data-mine.ipynb
 
@@ -221,7 +221,7 @@ f['LONG'] = ( f['LONG'].str.replace(',','.')
 f = f[ ~np.isnan(f['LAT']) ].copy()
 ```
 
-Uma amostra do resultado é visto na figura a seguir
+Uma amostra do resultado é visto na figura a seguir :
 
 ![transform02](img/transform02.jpeg)
 
@@ -439,7 +439,7 @@ Vamos agora tentar identificar algum padrão para quando a vítima é mulher, pa
 
 [*Random Forest*](http://docs.biolab.si/3/visual-programming/widgets/model/randomforest.html) é um algoritmo de aprendizado usando [combinação de árvores de decisão](http://en.wikipedia.org/wiki/Random_forest) usado para classificação, regressão, e outras tarefas. Usa como entrada o conjunto de dados e o modelo de pré-processamento, e as saídas são o algoritmo e o modelo de treinamento.
 
-[*Test and Score*](http://orange.biolab.si/categories/test-and-score/) é usado para avaliar a performance de modelos. Por exemplo na figura abaixo, *Logistic Regression* e *Random Forest* trabalham em conjunto com *Test and Score*, e usam validação cruzada para mostrar as informações. Primeiro ele divide os dados em dez subconjuntos, usa nove para treinar o modelo, e um para testá-lo. Então repete esse processo mais nove vezes, e em cada uma das vezes usa um subconjunto diferente para teste. As descrições das colunas da figura abaixo são:
+[*Test and Score*](http://orange.biolab.si/categories/test-and-score/) é usado para avaliar a performance de modelos. Por exemplo na figura abaixo, *Logistic Regression* e *Random Forest* trabalham em conjunto com *Test and Score*, e usam validação cruzada para mostrar as informações. Primeiro ele divide os dados em dez subconjuntos, usa nove para treinar o modelo, e um para testá-lo. Então repete esse processo mais nove vezes, e em cada uma das vezes usa um subconjunto diferente para teste. As descrições das colunas da figura abaixo são :
 
 - AUC - Área Debaixo da Curva, quanto maior melhor o modelo consegue distinguir as classes
 - CA - mostra a precisão da classificação que relata a proporção de dados classificados corretamente
@@ -461,7 +461,7 @@ No caso de *Random Forest* a predição manteve-se aproximadamente igual, com mu
 
 ![confu02](img/confu02.jpeg)
 
-Agora vamos dar uma olhada no *widget* *scatter* que pega dados do *Test and Score* e nos mostra os resultados das predições dos algoritmos de teste de classificação. Clicando em "Find Informative Projections" encontramos o gráfico abaixo de *Logistic Regression(FEMININO)* no eixo *x* e *Random Forest(FEMININO)* no eixo *y* . Podemos observar que usando os dois modelos é possível identificar um padrão com o acúmulo de pontos vermelhos (classe HOMENS) na parte inferior esquerda, e o de pontos azuis (classe FEMININO) na parte superior direita. Então respondendo a pergunta "É possível identificar algum padrão quando a vítima é mulher?", usando este gráfico e dois modelos , sim, é possível identificar um padrão, homens mais à esquerda deste gráfico, e mulheres mais à direita do gráfico:
+Agora vamos dar uma olhada no *widget* *scatter* que pega dados do *Test and Score* e nos mostra os resultados das predições dos algoritmos de teste de classificação. Clicando em "Find Informative Projections" encontramos o gráfico abaixo de *Logistic Regression(FEMININO)* no eixo *x* e *Random Forest(FEMININO)* no eixo *y* . Podemos observar que usando os dois modelos é possível identificar um padrão com o acúmulo de pontos vermelhos (classe HOMENS) na parte inferior esquerda, e o de pontos azuis (classe FEMININO) na parte superior direita. Então respondendo a pergunta "É possível identificar algum padrão quando a vítima é mulher?", usando este gráfico e dois modelos , sim, é possível identificar um padrão, homens mais à esquerda deste gráfico, e mulheres mais à direita do gráfico :
 
 ![](img/scatter03.jpeg)
 

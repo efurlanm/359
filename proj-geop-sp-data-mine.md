@@ -13,34 +13,23 @@ Neste experimento será explicado o que foi feito como projeto na disciplina CAP
 <!--ts-->
 
 * [Projeto de Mineração de Dados - CAP359](#projeto-de-mineração-de-dados---cap359)
-
 * [Resumo](#resumo)
-
 * [Sumário](#sumário)
-
 * [Introdução](#introdução)
-
 * [Dados](#dados)
-  
   * [Banco de dados de acidentes](#banco-de-dados-de-acidentes)
   * [Banco de dados do OpenStreetMap](#banco-de-dados-do-openstreetmap)
-
 * [Pré-processamento](#pré-processamento)
-  
   * [Principais ferramentas utilizadas](#principais-ferramentas-utilizadas)
   * [Seleção e transformação dos dados](#seleção-e-transformação-dos-dados)
-
 * [Experimentos](#experimentos)
-  
   * [Perguntas a respeito dos dados](#perguntas-a-respeito-dos-dados)
   * [Lendo o <em>dataset</em>](#lendo-o-dataset)
   * [Visualizando](#visualizando)
-
 * [Resultados e Considerações Finais](#resultados-e-considerações-finais)
-
 * [Referências](#referências)
-  
-  <!--te-->
+
+<!--te-->
 
 # Introdução
 
@@ -510,4 +499,3 @@ Como sugestão para trabalhos futuros, pode-se acrescentar mais perguntas e tent
 
 **Python**. Disponível em: <https://www.python.org/>. 
 RAICHEV, A. **Introducing GeoPandas**. Disponível em: <https://pyvideo.org/kiwi-pycon-2017/introducing-geopandas.html>. 
-

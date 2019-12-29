@@ -498,6 +498,5 @@ Como sugestão para trabalhos futuros, pode-se acrescentar mais perguntas e tent
 **Pandas: Python Data Analysis Library**. Disponível em: <https://pandas.pydata.org/>. 
 
 **Python**. Disponível em: <https://www.python.org/>. 
-RAICHEV, A.
 
-**Introducing GeoPandas**. Disponível em: <https://pyvideo.org/kiwi-pycon-2017/introducing-geopandas.html>.
+RAICHEV, A. **Introducing GeoPandas**. Disponível em: <https://pyvideo.org/kiwi-pycon-2017/introducing-geopandas.html>.

@@ -17,15 +17,15 @@ Neste experimento será explicado o que foi feito como projeto na disciplina CAP
 * [Sumário](#sumário)
 * [Introdução](#introdução)
 * [Dados](#dados)
-  * [Banco de dados de acidentes](#banco-de-dados-de-acidentes)
-  * [Banco de dados do OpenStreetMap](#banco-de-dados-do-openstreetmap)
+      * [Banco de dados de acidentes](#banco-de-dados-de-acidentes)
+    * [Banco de dados do OpenStreetMap](#banco-de-dados-do-openstreetmap)
 * [Pré-processamento](#pré-processamento)
-  * [Principais ferramentas utilizadas](#principais-ferramentas-utilizadas)
-  * [Seleção e transformação dos dados](#seleção-e-transformação-dos-dados)
+    * [Principais ferramentas utilizadas](#principais-ferramentas-utilizadas)
+    * [Seleção e transformação dos dados](#seleção-e-transformação-dos-dados)
 * [Experimentos](#experimentos)
-  * [Perguntas a respeito dos dados](#perguntas-a-respeito-dos-dados)
-  * [Lendo o <em>dataset</em>](#lendo-o-dataset)
-  * [Visualizando](#visualizando)
+    * [Perguntas a respeito dos dados](#perguntas-a-respeito-dos-dados)
+    * [Lendo o <em>dataset</em>](#lendo-o-dataset)
+    * [Visualizando](#visualizando)
 * [Resultados e Considerações Finais](#resultados-e-considerações-finais)
 * [Referências](#referências)
 
@@ -41,7 +41,7 @@ A [Base de Dados Infosiga SP](http://www.infosiga.sp.gov.br/Home/InfoMapaRelator
 
 O arquivo "BaseCompletaNov17.csv" contem informações de acidentes de 2016 a 2017, possui 2,4 MB e 16904 registros no formato CSV (separado por ponto e vírgula). Está disponível para download em :
 
-- www.infosiga.sp.gov.br/Home/BuscarInfoMapaRelatorioPorId/58
+- <http://www.infosiga.sp.gov.br/Home/BuscarInfoMapaRelatorioPorId/58>
 
 Os dados são mostrados na figura a seguir, carregados em uma planilha, para termos uma visão geral ajudando a identificar as primeiras características do banco :
 
@@ -103,8 +103,8 @@ Como o OpenStreetMap não é o foco principal desse estudo não entraremos em de
 
 Uma compilação do banco de dados de vias públicas extraído do OpenStreeMap  (Imposm GoJSON, 116 MB) pode ser obtido em :
 
-- http://www.nextzen.org/metro-extracts/index.html , ou
-- http://s3.amazonaws.com/metro-extracts.nextzen.org/sao-paulo_brazil.imposm-geojson.zip
+- <http://www.nextzen.org/metro-extracts/index.html> , ou
+- <http://s3.amazonaws.com/metro-extracts.nextzen.org/sao-paulo_brazil.imposm-geojson.zip>
 
 Após baixar e extrair o arquivo `sao-paulo_brazil_roads_gen1.geojson` (16,3 MB), ele pode ser lido pelo Geopandas, como mostra o exemplo na figura abaixo :
 
@@ -310,27 +310,27 @@ O *dataset* final contém 2920 registros com informações como nome da rua, cid
 
 Caso se opte pela realocação das colunas, uma possível configuração seria :
 
-| COLUNA     | DESCRIÇÃO                                                   |
-| ---------- | ----------------------------------------------------------- |
-| NOME       | Nome da via                                                 |
-| geometry   | Coordernadas (Geopandas)                                    |
-| CIDADE     | Nome da cidade                                              |
-| REG_ADM    | Região metropolitana, Baixada santista, Sorocaba, SJC, etc. |
-| ANO        | 2016 ou 2017                                                |
-| MES        | Número do mês                                               |
-| DES_MES    | Nome do mês                                                 |
-| SEXO       | Feminino, Masculino                                         |
-| TURNO      | Manhã, noite, etc.                                          |
-| TIPO       | Atropelamento, colisão, etc.                                |
-| VEIC       | Pedestre, Motocicleta, etc.                                 |
-| FAIXA_ETAR | Faixa etária                                                |
-| IDADE      | Idade                                                       |
-| VITIMA     | Pedestre, condutor, etc.                                    |
-| LOCAL      | Publico, privado                                            |
-| DIA_SEM    | Dia da semana                                               |
-| VIA        | Rodovia, via municipal                                      |
-| LAT        | Latitude                                                    |
-| LONG       | Longitude                                                   |
+| COLUNA     | DESCRIÇÃO                                                    |
+| ---------- | ------------------------------------------------------------ |
+| NOME       | Nome da via                                                  |
+| geometry   | Coordenadas (Geopandas)                                      |
+| CIDADE     | Nome da cidade                                               |
+| REG_ADM    | Região metropolitana, Baixada santista, Sorocaba, SJC (São José dos Campos), etc. |
+| ANO        | 2016 ou 2017                                                 |
+| MES        | Número do mês                                                |
+| DES_MES    | Nome do mês                                                  |
+| SEXO       | Feminino, Masculino                                          |
+| TURNO      | Manhã, noite, etc.                                           |
+| TIPO       | Atropelamento, colisão, etc.                                 |
+| VEIC       | Pedestre, Motocicleta, etc.                                  |
+| FAIXA_ETAR | Faixa etária                                                 |
+| IDADE      | Idade                                                        |
+| VITIMA     | Pedestre, condutor, etc.                                     |
+| LOCAL      | Publico, privado                                             |
+| DIA_SEM    | Dia da semana                                                |
+| VIA        | Rodovia, via municipal                                       |
+| LAT        | Latitude                                                     |
+| LONG       | Longitude                                                    |
 
 # Experimentos
 

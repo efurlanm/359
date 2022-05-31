@@ -1,7 +1,5 @@
 # My personal course repository
 
-CAP-359 Data Mining Principles and Applications
-
 
 ## Course work
 

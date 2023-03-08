@@ -1,4 +1,4 @@
-# My personal course repository
+# My personal notes
 
 Course work:
 
